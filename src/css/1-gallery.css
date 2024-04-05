@@ -1,0 +1,36 @@
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+.gallery {
+    max-width: 1128px;
+    margin: 24px auto;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    justify-content: center;
+}
+
+.item {
+    max-width: 360px;
+    max-height: 200px;
+    overflow: hidden;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item:hover,
+.item:focus {
+    transform: scale(1.1);
+}
+
+.img {
+    max-width: 100%;
+}
